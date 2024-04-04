@@ -59,5 +59,5 @@ def multiply():
     json_data = {'code': 0, 'result': result}
     return json.dumps(json_data)
 
-
-bottle.run(app, host='0.0.0.0', port=3000)
+if __name__ == '__main__':
+    bottle.run(app, host='0.0.0.0', port=3000)
